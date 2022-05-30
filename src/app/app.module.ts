@@ -3,7 +3,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-
+//features modules
+import { RenderingFlowsModule } from './rendering-flows/rendering-flows.module';
 import { TemplateFundamentalsModule } from './template-fundamentals/template-fundamentals.module';
 @NgModule({
   declarations: [AppComponent],
@@ -12,6 +13,7 @@ import { TemplateFundamentalsModule } from './template-fundamentals/template-fun
     AppRoutingModule,
     //features modules
     TemplateFundamentalsModule,
+    RenderingFlowsModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

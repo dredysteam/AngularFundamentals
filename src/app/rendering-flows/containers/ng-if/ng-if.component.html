@@ -1,0 +1,6 @@
+<h3>ng-if works!</h3>
+
+<div>
+  <input type="text" (input)="handleChange($event)" />
+</div>
+<div *ngIf="name.length">Searching for...{{ name }}</div>

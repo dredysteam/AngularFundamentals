@@ -1,0 +1,25 @@
+<h3>safe-navigation works!</h3>
+
+<h3>Airlines Passengers</h3>
+<ul>
+  <li class="container" *ngFor="let passenger of passengers; let i = index">
+    <span
+      class="status"
+      [ngStyle]="{
+        backgroundColor: passenger.checkedIn ? '#2ecc71' : '#c0392b'
+      }"
+    ></span>
+    <p>{{ i }}:</p>
+    <p>{{ passenger.fullname }}</p>
+    <p>
+      Check in Date:
+      {{
+        passenger.checkedIn
+          ? (passenger.checkedInDate | date: "yMMMM" | uppercase)
+          : "Not checked In"
+      }}
+    </p>
+    <p>Children: {{ passenger.children?.length || 0 }}</p>
+    <!-- <p *ngFor="let child of passenger.children">{{ child.name }}</p> -->
+  </li>
+</ul>

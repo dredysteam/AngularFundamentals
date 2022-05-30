@@ -1,0 +1,23 @@
+<h3>pipes works!</h3>
+
+<h3>Airlines Passengers</h3>
+<ul>
+  <li class="container" *ngFor="let passenger of passengers; let i = index">
+    <span
+      class="status"
+      [ngStyle]="{
+        backgroundColor: passenger.checkedIn ? '#2ecc71' : '#c0392b'
+      }"
+    ></span>
+    <p>{{ i }}:</p>
+    <p>{{ passenger.fullname }}</p>
+    <p>
+      Check in Date:
+      {{
+        passenger.checkedIn
+          ? (passenger.checkedInDate | date: "yMMMM" | uppercase)
+          : "Not checked In"
+      }}
+    </p>
+  </li>
+</ul>

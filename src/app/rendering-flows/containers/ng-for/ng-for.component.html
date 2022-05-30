@@ -1,0 +1,9 @@
+<h3>ng-for works!</h3>
+
+<h3>Airlines Passengers</h3>
+
+<ul>
+  <li *ngFor="let item of passengers; let i = index">
+    {{ i }}:{{ item.fullname }}
+  </li>
+</ul>

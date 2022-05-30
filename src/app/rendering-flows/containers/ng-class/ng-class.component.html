@@ -1,0 +1,29 @@
+<h3>ng-class works!</h3>
+
+<h3>Airlines Passengers</h3>
+
+<ul>
+  <li class="container" *ngFor="let passenger of passengers; let i = index">
+    <span
+      class="status"
+      [ngClass]="{ 'checked-in': passenger.checkedIn }"
+    ></span>
+    <p>{{ i }}:</p>
+    <p>{{ passenger.fullname }}</p>
+  </li>
+</ul>
+
+<h4>Another Way</h4>
+<ul>
+  <li class="container" *ngFor="let passenger of passengers; let i = index">
+    <span
+      class="status"
+      [ngClass]="{
+        'checked-in': passenger.checkedIn,
+        'checked-out': !passenger.checkedIn
+      }"
+    ></span>
+    <p>{{ i }}:</p>
+    <p>{{ passenger.fullname }}</p>
+  </li>
+</ul>
