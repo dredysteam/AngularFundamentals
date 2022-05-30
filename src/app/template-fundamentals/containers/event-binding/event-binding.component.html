@@ -1,0 +1,16 @@
+<h3>Event-binding works!</h3>
+
+<div class="input-name">
+  <input
+    type="text"
+    [value]="name"
+    (input)="handleInput($event)"
+    (blur)="handleBlur($event)"
+  />
+
+  <button (click)="handleClick()">Change name</button>
+</div>
+
+<div>
+  {{ name }}
+</div>
