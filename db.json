@@ -1,0 +1,74 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "passengers": [
+    {
+      "id": 1,
+      "fullname": "Ralph",
+      "checkedIn": true,
+      "checkedInDate": 1490742000000,
+      "children": null
+    },
+    {
+      "id": 2,
+      "fullname": "Laura",
+      "checkedIn": false,
+      "checkedInDate": null,
+      "children": [
+        {
+          "name": "Peter",
+          "age": 2
+        },
+        {
+          "name": "Jhon",
+          "age": 1
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "fullname": "Leonor",
+      "checkedIn": true,
+      "checkedInDate": 1491606000000,
+      "children": null
+    },
+    {
+      "id": 4,
+      "fullname": "Lore",
+      "checkedIn": true,
+      "checkedInDate": 1488412800000,
+      "children": [
+        {
+          "name": "Alex",
+          "age": 2
+        },
+        {
+          "name": "Judith",
+          "age": 3
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "fullname": "Chris",
+      "checkedIn": false,
+      "checkedInDate": null,
+      "children": null
+    }
+  ]
+}
