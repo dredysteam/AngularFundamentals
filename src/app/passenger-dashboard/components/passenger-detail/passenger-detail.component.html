@@ -1,0 +1,33 @@
+<ul>
+  <li class="container">
+    <span
+      class="status"
+      [ngStyle]="{
+        backgroundColor: detail?.checkedIn ? '#2ecc71' : '#c0392b'
+      }"
+    ></span>
+    <!-- <p>{{ i }}:</p> -->
+    <p *ngIf="!editing">{{ detail?.fullname }}</p>
+    <div *ngIf="editing">
+      <input
+        type="text"
+        [value]="detail?.fullname"
+        (input)="onNameChange(name.value)"
+        #name
+      />
+    </div>
+    <!-- <button (click)="toggleEdit()">{{ editing ? "Edit" : "Done" }}</button> -->
+    <p>
+      Check in Date:
+      {{
+        detail?.checkedIn
+          ? (detail?.checkedInDate | date: "yMMMM" | uppercase)
+          : "Not checked In"
+      }}
+    </p>
+    <p>Children: {{ detail?.children?.length || 0 }}</p>
+    <!-- <p *ngFor="let child of passenger.children">{{ child.name }}</p> -->
+    <button (click)="toggleEdit()">{{ editing ? "Done" : "Edit" }}</button>
+    <button (click)="onRemove()">Remove</button>
+  </li>
+</ul>

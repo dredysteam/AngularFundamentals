@@ -1,0 +1,26 @@
+.status {
+  width: 10px;
+  height: 10px;
+  background: #c0392b;
+  display: block;
+  border-radius: 50%;
+}
+
+.status.checked-in {
+  background: #2ecc71;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  gap: 3px;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background-color: rgba(99, 28, 99, 0.308);
+  color: #fff;
+}
