@@ -19,6 +19,11 @@ export class PassengerDashboardComponent implements OnInit {
       .subscribe((data: Passenger[]) => {
         this.passengers = data;
       });
+
+    // Promise alternative
+    // this.passengerDashboardService.getPassengers().then((data: Passenger[]) => {
+    //   this.passengers = data;
+    // });
   }
 
   handleRemove(event: Passenger) {
