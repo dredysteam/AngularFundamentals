@@ -24,6 +24,9 @@ export class PassengerDetailComponent implements OnInit, OnChanges {
   @Output()
   edit: EventEmitter<any> = new EventEmitter();
 
+  @Output()
+  view: EventEmitter<any> = new EventEmitter();
+
   editing: boolean = false;
 
   constructor() {}
@@ -50,5 +53,9 @@ export class PassengerDetailComponent implements OnInit, OnChanges {
 
   onRemove() {
     this.remove.emit(this.detail);
+  }
+
+  goToPassenger() {
+    this.view.emit(this.detail);
   }
 }

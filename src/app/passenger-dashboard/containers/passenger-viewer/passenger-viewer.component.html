@@ -1,6 +1,9 @@
 <p>passenger-viewer works!</p>
 <p>{{ passenger | json }}</p>
 
+<div>
+  <button (click)="goBack()">&lsaquo; GoBack</button>
+</div>
 <app-passenger-form
   [detail]="passenger"
   (update)="onUpdatePassenger($event)"

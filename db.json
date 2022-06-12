@@ -18,57 +18,39 @@
   },
   "passengers": [
     {
-      "id": 1,
       "fullname": "Ralph",
+      "id": 1,
       "checkedIn": true,
-      "checkedInDate": 1490742000000,
-      "children": null
+      "baggage": "none",
+      "checkedInDate": 1655036107733
     },
     {
       "id": 2,
       "fullname": "Laura",
       "checkedIn": false,
       "checkedInDate": null,
-      "children": [
-        {
-          "name": "Peter",
-          "age": 2
-        },
-        {
-          "name": "Jhon",
-          "age": 1
-        }
-      ]
+      "baggage": ""
     },
     {
-      "id": 3,
       "fullname": "Leonor",
+      "id": 3,
       "checkedIn": true,
-      "checkedInDate": 1491606000000,
-      "children": null
+      "baggage": "",
+      "checkedInDate": 1655068397882
     },
     {
       "id": 4,
       "fullname": "Lore",
       "checkedIn": true,
       "checkedInDate": 1488412800000,
-      "children": [
-        {
-          "name": "Alex",
-          "age": 2
-        },
-        {
-          "name": "Judith",
-          "age": 3
-        }
-      ]
+      "baggage": ""
     },
     {
       "id": 5,
       "fullname": "Chris",
       "checkedIn": false,
       "checkedInDate": null,
-      "children": null
+      "baggage": ""
     }
   ]
 }
