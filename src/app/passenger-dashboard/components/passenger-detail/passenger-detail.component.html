@@ -25,7 +25,7 @@
           : "Not checked In"
       }}
     </p>
-    <p>Children: {{ detail?.children?.length || 0 }}</p>
+    <!-- <p>Children: {{ detail?.children?.length || 0 }}</p> -->
     <!-- <p *ngFor="let child of passenger.children">{{ child.name }}</p> -->
     <button (click)="toggleEdit()">{{ editing ? "Done" : "Edit" }}</button>
     <button (click)="onRemove()">Remove</button>

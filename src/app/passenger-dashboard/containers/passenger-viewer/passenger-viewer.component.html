@@ -1,0 +1,7 @@
+<p>passenger-viewer works!</p>
+<p>{{ passenger | json }}</p>
+
+<app-passenger-form
+  [detail]="passenger"
+  (update)="onUpdatePassenger($event)"
+></app-passenger-form>

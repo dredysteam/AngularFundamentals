@@ -21,6 +21,12 @@ export class PassengerDashboardService {
       .pipe(catchError(this.handleError));
   }
 
+  getPassenger(id: number): Observable<Passenger> {
+    return this.http
+      .get<Passenger>(`${PASSENGER_API}/${id}`)
+      .pipe(catchError(this.handleError));
+  }
+
   handleError(error) {
     return throwError(() => new Error(error.message || 'Server error'));
   }
